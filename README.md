@@ -19,9 +19,9 @@ The repository contains both MapReduce and Spark projects MRAadhaarAnalysis and 
 * com/stdatalabs/MRAadhaarAnalysis
     * NumUIDMapper.java -- Filters the header and writes (State, Aadhaar_generated) to mapper output
     * NumUIDReducer.java -- Aggregates values for each State that is received as key from the mapper and outputs the State wise identities generated
-    * sortMapper.java -- Receives output from previous MR job and swaps the (K, V) pair
-    * sortComparator.java -- Sorts the mapper output in descending order before passing to reducer
-    * sortReducer.java -- Swaps the (K, V) pair into (State, count) and sends to output file
+    * SortMapper.java -- Receives output from previous MR job and swaps the (K, V) pair
+    * SortComparator.java -- Sorts the mapper output in descending order before passing to reducer
+    * SortReducer.java -- Swaps the (K, V) pair into (State, count) and sends to output file
     * Driver.java -- Driver program for MapReduce jobs
 
 ## Description
