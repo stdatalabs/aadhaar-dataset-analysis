@@ -74,9 +74,9 @@ public class Driver extends Configured implements Tool {
 		sort.setOutputKeyClass(Text.class);
 		sort.setOutputValueClass(IntWritable.class);
 
-		sort.setMapperClass(sortMapper.class);
-		sort.setReducerClass(sortReducer.class);
-		sort.setSortComparatorClass(sortComparator.class);
+		sort.setMapperClass(SortMapper.class);
+		sort.setReducerClass(SortReducer.class);
+		sort.setSortComparatorClass(SortComparator.class);
 		
 		sort.setMapOutputKeyClass(IntWritable.class);
 		sort.setMapOutputValueClass(Text.class);
